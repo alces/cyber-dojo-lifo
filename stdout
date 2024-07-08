@@ -1,8 +1,2 @@
---- FAIL: TestStackAdd (0.00s)
-    main_test.go:17: 
-        	Error Trace:	main_test.go:17
-        	Error:      	An error is expected but got nil.
-        	Test:       	TestStackAdd
-FAIL
-exit status 1
-FAIL	_/sandbox	0.010s
+PASS
+ok  	_/sandbox	0.002s

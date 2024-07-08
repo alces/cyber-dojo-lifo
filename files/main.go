@@ -7,3 +7,7 @@ type Stack struct {
 func New() *Stack {
     return &Stack{}
 }
+
+func (s *Stack) Add(element string) error {
+    return nil
+}

@@ -23,5 +23,5 @@ func (s *Stack) Add(element string) error {
 }
 
 func (s *Stack) Size() int {
-    return 0
+    return s.size
 }

@@ -15,6 +15,8 @@ func TestStackAdd(t *testing.T) {
     stack := New()
        
     assert.Error(t, stack.Add(""))
+    assert.Equal(t, 0, stack.size)
+    
     assert.Nil(t, stack.Add("one"))
     assert.Equal(t, 1, stack.size)
 }

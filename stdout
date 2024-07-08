@@ -1,10 +1,10 @@
 --- FAIL: TestStackAdd (0.00s)
-    main_test.go:19: 
-        	Error Trace:	main_test.go:19
+    main_test.go:21: 
+        	Error Trace:	main_test.go:21
         	Error:      	Not equal: 
         	            	expected: 1
         	            	actual  : 0
         	Test:       	TestStackAdd
 FAIL
 exit status 1
-FAIL	_/sandbox	0.006s
+FAIL	_/sandbox	0.008s

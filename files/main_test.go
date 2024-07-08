@@ -20,3 +20,10 @@ func TestStackAdd(t *testing.T) {
     assert.Nil(t, stack.Add("one"))
     assert.Equal(t, 1, stack.size)
 }
+
+func TestStackSizet *testing.T) {
+    stack := New()
+    
+    stack.Add("test")
+    assert.Equal(t, 1, stack.Size())
+}

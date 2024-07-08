@@ -123,5 +123,21 @@
       25,
       123176
     ]
+  },
+  {
+    "duration": 2.299787,
+    "colour": "red",
+    "predicted": "red",
+    "revert_if_wrong": "off",
+    "index": 8,
+    "time": [
+      2024,
+      7,
+      8,
+      14,
+      13,
+      57,
+      303858
+    ]
   }
 ]

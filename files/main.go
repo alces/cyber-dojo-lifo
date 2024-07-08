@@ -21,3 +21,7 @@ func (s *Stack) Add(element string) error {
     
     return nil
 }
+
+func (s *Stack) Size() int {
+    return 0
+}

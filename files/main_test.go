@@ -21,7 +21,7 @@ func TestStackAdd(t *testing.T) {
     assert.Equal(t, 1, stack.size)
 }
 
-func TestStackSizet *testing.T) {
+func TestStackSize(t *testing.T) {
     stack := New()
     
     stack.Add("test")

@@ -5,5 +5,5 @@ type Stack struct {
 }
 
 func New() *Stack {
-    return nil
+    return &Stack{}
 }

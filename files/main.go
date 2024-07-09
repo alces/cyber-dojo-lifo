@@ -5,7 +5,8 @@ import (
 )
 
 type Stack struct {
-    size int
+    size  int
+    items []string
 }
 
 func New() *Stack {
@@ -27,7 +28,7 @@ func (s *Stack) Get(index int) (string, error) {
         return "", fmt.Errorf("Index outside of stack")
     }
     
-    return "", nil
+    return items[index], nil
 }
 
 func (s *Stack) Size() int {

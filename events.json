@@ -251,5 +251,21 @@
       46,
       957632
     ]
+  },
+  {
+    "duration": 6.862526,
+    "colour": "amber",
+    "predicted": "red",
+    "revert_if_wrong": "off",
+    "index": 16,
+    "time": [
+      2024,
+      7,
+      9,
+      7,
+      32,
+      44,
+      95155
+    ]
   }
 ]

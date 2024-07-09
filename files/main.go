@@ -23,6 +23,10 @@ func (s *Stack) Add(element string) error {
 }
 
 func (s *Stack) Get(index int) (string, error) {
+    if index >= s.Size() {
+        return "", fmt.Errorf("Index outside of stack")
+    }
+    
     return "", nil
 }
 

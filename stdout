@@ -1,8 +1,2 @@
---- FAIL: TestGet (0.00s)
-    main_test.go:28: 
-        	Error Trace:	main_test.go:28
-        	Error:      	An error is expected but got nil.
-        	Test:       	TestGet
-FAIL
-exit status 1
-FAIL	_/sandbox	0.006s
+PASS
+ok  	_/sandbox	0.023s

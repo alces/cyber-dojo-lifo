@@ -1,1 +1,17 @@
-FAIL	_/sandbox [build failed]
+--- FAIL: TestGet (0.00s)
+    main_test.go:40: 
+        	Error Trace:	main_test.go:40
+        	Error:      	Not equal: 
+        	            	expected: "second"
+        	            	actual  : "first"
+        	            	
+        	            	Diff:
+        	            	--- Expected
+        	            	+++ Actual
+        	            	@@ -1 +1 @@
+        	            	-second
+        	            	+first
+        	Test:       	TestGet
+FAIL
+exit status 1
+FAIL	_/sandbox	0.005s

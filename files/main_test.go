@@ -35,7 +35,7 @@ func TestGet(t *testing.T) {
     
     putItem = "second"
     stack.Add(putItem)
-    getItem, err := stack.Get(0)
+    getItem, err = stack.Get(0)
     assert.Nil(t, err)
     assert.Equal(t, putItem, getItem)
 }

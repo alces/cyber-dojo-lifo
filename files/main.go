@@ -28,7 +28,7 @@ func (s *Stack) Get(index int) (string, error) {
         return "", fmt.Errorf("Index outside of stack")
     }
     
-    return items[index], nil
+    return s.items[index], nil
 }
 
 func (s *Stack) Size() int {

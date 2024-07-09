@@ -1,2 +1,17 @@
-PASS
-ok  	_/sandbox	0.023s
+--- FAIL: TestGet (0.00s)
+    main_test.go:34: 
+        	Error Trace:	main_test.go:34
+        	Error:      	Not equal: 
+        	            	expected: "test"
+        	            	actual  : ""
+        	            	
+        	            	Diff:
+        	            	--- Expected
+        	            	+++ Actual
+        	            	@@ -1 +1 @@
+        	            	-test
+        	            	+
+        	Test:       	TestGet
+FAIL
+exit status 1
+FAIL	_/sandbox	0.004s

@@ -1,4 +1,0 @@
-# _/sandbox [_/sandbox.test]
-./main_test.go:36:5: undefined: secondItem
-./main_test.go:37:15: undefined: secondItem
-./main_test.go:41:21: undefined: secondItem

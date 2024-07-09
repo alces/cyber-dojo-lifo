@@ -18,8 +18,14 @@ func (s *Stack) Add(element string) error {
         return fmt.Errorf("Element cannot be empty")
     }
     
-    s.items = append(s.items, element)   
-    s.size++
+    index := s.index(element)
+    
+    if index > -1 {
+        s.items = append(s.items[index - 1:], s.items[index + 1:]...)
+    } else { 
+        s.size++
+    }
+    s.items = append(s.items, element)
     
     return nil
 }

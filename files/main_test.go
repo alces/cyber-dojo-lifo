@@ -46,6 +46,9 @@ func TestStackGet(t *testing.T) {
     
     stack.Add(firstItem)
     assert.Equal(t, 2, stack.Size())
+    getItem, err = stack.Get(0)
+    assert.Nil(t, err)
+    assert.Equal(t, firstItem, getItem)
 }
 
 func TestStackIndex(t *testing.T) {

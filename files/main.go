@@ -22,6 +22,10 @@ func (s *Stack) Add(element string) error {
     return nil
 }
 
+func (s *Stack) Get(index int) (string, error) {
+    return "", nil
+}
+
 func (s *Stack) Size() int {
     return s.size
 }

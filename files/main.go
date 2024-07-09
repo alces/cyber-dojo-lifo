@@ -21,7 +21,11 @@ func (s *Stack) Add(element string) error {
     index := s.index(element)
     
     if index > -1 {
-        s.items = append(s.items[index - 1:], s.items[index + 1:]...)
+        if index == 0 {
+            s.items = s.items[1:]
+        } else {
+            s.items = append(s.items[index - 1:], s.items[index + 1:]...)
+        }
     } else { 
         s.size++
     }

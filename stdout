@@ -1,21 +1,2 @@
---- FAIL: TestStackGet (0.00s)
-panic: runtime error: slice bounds out of range [-1:] [recovered]
-	panic: runtime error: slice bounds out of range [-1:]
-
-goroutine 21 [running]:
-testing.tRunner.func1.2({0x5ce2a0, 0xc0000ec270})
-	/usr/local/go/src/testing/testing.go:1389 +0x24e
-testing.tRunner.func1()
-	/usr/local/go/src/testing/testing.go:1392 +0x39f
-panic({0x5ce2a0, 0xc0000ec270})
-	/usr/local/go/src/runtime/panic.go:838 +0x207
-_/sandbox.(*Stack).Add(0xc000046f40, {0x5deadc, 0x5})
-	/sandbox/main.go:24 +0x2fb
-_/sandbox.TestStackGet(0x0?)
-	/sandbox/main_test.go:47 +0x24c
-testing.tRunner(0xc00011c340, 0x5f2a28)
-	/usr/local/go/src/testing/testing.go:1439 +0x102
-created by testing.(*T).Run
-	/usr/local/go/src/testing/testing.go:1486 +0x35f
-exit status 2
-FAIL	_/sandbox	0.005s
+PASS
+ok  	_/sandbox	0.014s

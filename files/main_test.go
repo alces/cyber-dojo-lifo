@@ -27,12 +27,17 @@ func TestGet(t *testing.T) {
     _, err := stack.Get(0)
     assert.Error(t, err)
     
-    putItem := "test"
+    putItem := "first"
     stack.Add(putItem)
     getItem, err := stack.Get(0)
     assert.Nil(t, err)
     assert.Equal(t, putItem, getItem)
     
+    putItem = "second"
+    stack.Add(putItem)
+    getItem, err := stack.Get(0)
+    assert.Nil(t, err)
+    assert.Equal(t, putItem, getItem)
 }
 
 func TestStackSize(t *testing.T) {

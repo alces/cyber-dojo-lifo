@@ -1,10 +1,2 @@
---- FAIL: TestStackIndex (0.00s)
-    main_test.go:50: 
-        	Error Trace:	main_test.go:50
-        	Error:      	Not equal: 
-        	            	expected: -1
-        	            	actual  : 0
-        	Test:       	TestStackIndex
-FAIL
-exit status 1
-FAIL	_/sandbox	0.002s
+PASS
+ok  	_/sandbox	0.003s

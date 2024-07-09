@@ -35,3 +35,7 @@ func (s *Stack) Get(index int) (string, error) {
 func (s *Stack) Size() int {
     return s.size
 }
+
+func (s *Stack) index(element string) int {
+    return 0
+}

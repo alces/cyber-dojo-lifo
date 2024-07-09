@@ -1,0 +1,2 @@
+# _/sandbox [_/sandbox.test]
+./main_test.go:50:31: stack.Index undefined (type *Stack has no field or method Index, but does have index)

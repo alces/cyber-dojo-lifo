@@ -1,2 +1,10 @@
-PASS
-ok  	_/sandbox	0.011s
+--- FAIL: TestStackGet (0.00s)
+    main_test.go:48: 
+        	Error Trace:	main_test.go:48
+        	Error:      	Not equal: 
+        	            	expected: 2
+        	            	actual  : 3
+        	Test:       	TestStackGet
+FAIL
+exit status 1
+FAIL	_/sandbox	0.007s

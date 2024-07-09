@@ -18,6 +18,7 @@ func (s *Stack) Add(element string) error {
         return fmt.Errorf("Element cannot be empty")
     }
     
+    s.items = append(s.items, element)   
     s.size++
     
     return nil

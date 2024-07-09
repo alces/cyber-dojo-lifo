@@ -24,7 +24,7 @@ func TestStackAdd(t *testing.T) {
 func TestGet(t *testing.T) {
     stack := New()
     
-    item, err := stack.Get(0)
+    _, err := stack.Get(0)
     assert.Error(t, err)
 }
 

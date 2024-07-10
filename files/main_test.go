@@ -51,6 +51,18 @@ func TestStackGet(t *testing.T) {
     assert.Equal(t, firstItem, getItem)
 }
 
+func TestStackIndex(t *testing.T) {
+    nonexistent := "nonexistent"
+    existing    := "existing"
+    
+    stack := New()
+    assert.Equal(t, -1, stack.index(nonexistent))
+        
+    stack.Add(existing)
+    assert.Equal(t, 0, stack.index(existing))
+    assert.Equal(t, -1, stack.index(nonexistent))
+}
+    
 func TestStackSize(t *testing.T) {
     stack := New()
     

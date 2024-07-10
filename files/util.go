@@ -15,12 +15,16 @@ func index(items []string, element string) (int, error) {
 }
 
 func remove(items []string, index int) ([]string, error) {
-    if index >= len(items) {
+    size := len(items)
+    
+    if index >= size {
         return nil, fmt.Errorf("Index out of slice")
     }
     
     if index == 0 {
         return items[1:], nil
+    } else if index == size - 1 {
+        return items[:size - 1], nil
     }
     
     return []string{}, nil

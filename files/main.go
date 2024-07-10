@@ -18,7 +18,7 @@ func (s *Stack) Add(element string) error {
         return fmt.Errorf("Element cannot be empty")
     }
     
-    index, err := index(items, element)    
+    index, err := index(s.items, element)    
     if err == nil {
         if index == 0 {
             s.items = s.items[1:]

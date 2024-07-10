@@ -25,4 +25,8 @@ func TestRemove(t *testing.T) {
     result, err = remove([]string{"a", "b"}, 1)
     assert.Nil(t, err)
     assert.Equal(t, []string{"a"}, result)
+    
+    result, err = remove([]string{"a", "b", "c"}, 1)
+    assert.Nil(t, err)
+    assert.Equal(t, []string{"a", "c"}, result)
 }

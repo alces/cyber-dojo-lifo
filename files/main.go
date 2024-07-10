@@ -5,7 +5,6 @@ import (
 )
 
 type Stack struct {
-    size  int
     items []string
 }
 

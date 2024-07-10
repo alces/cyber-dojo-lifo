@@ -21,9 +21,8 @@ func (s *Stack) Add(element string) error {
     index, err := index(s.items, element)    
     if err == nil {
         s.items, err = remove(s.items, index)
-    } else { 
-        s.size++
     }
+    
     s.items = append(s.items, element)
     
     return nil
@@ -38,5 +37,5 @@ func (s *Stack) Get(index int) (string, error) {
 }
 
 func (s *Stack) Size() int {
-    return s.size
+    return len(s.items)
 }

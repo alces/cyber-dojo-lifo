@@ -5,12 +5,15 @@ import (
 )
 
 type Stack struct {
-    size  int
-    items []string
+    byContent  map[string]int
+    byPosition map[int]string
 }
 
 func New() *Stack {
-    return &Stack{}
+    return &Stack{
+        byContent:  make(map[string]int),
+        byPosition: make(map[int]string),
+    }
 }
 
 func (s *Stack) Add(element string) error {
@@ -18,40 +21,27 @@ func (s *Stack) Add(element string) error {
         return fmt.Errorf("Element cannot be empty")
     }
     
-    index := s.index(element)
+    index := s.Size()
     
-    if index > -1 {
-        if index == 0 {
-            s.items = s.items[1:]
-        } else {
-            s.items = append(s.items[index - 1:], s.items[index + 1:]...)
-        }
-    } else { 
-        s.size++
+    if _, ok := s.byContent[element]; ok {
+        index--
     }
-    s.items = append(s.items, element)
+    
+    s.byContent[element] = index
+    s.byPosition[index] = element
     
     return nil
 }
 
 func (s *Stack) Get(index int) (string, error) {
-    if index >= s.Size() {
-        return "", fmt.Errorf("Index outside of stack")
+    item, ok := s.byPosition[index]    
+    if !ok {
+        return "", fmt.Errorf("Not found")
     }
     
-    return s.items[s.Size() - index - 1], nil
+    return item, nil
 }
 
 func (s *Stack) Size() int {
-    return s.size
-}
-
-func (s *Stack) index(element string) int {
-    for i := 0; i < s.Size(); i++ {
-        if s.items[i] == element {
-            return i
-        }
-    }
-    
-    return -1
+    return len(s.byContent)
 }

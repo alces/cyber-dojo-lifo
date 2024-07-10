@@ -1,21 +1,2 @@
---- FAIL: TestRemove (0.00s)
-    util_test.go:31: 
-        	Error Trace:	util_test.go:31
-        	Error:      	Not equal: 
-        	            	expected: []string{"a", "c"}
-        	            	actual  : []string{"a", "b", "c", "c"}
-        	            	
-        	            	Diff:
-        	            	--- Expected
-        	            	+++ Actual
-        	            	@@ -1,3 +1,5 @@
-        	            	-([]string) (len=2) {
-        	            	+([]string) (len=4) {
-        	            	  (string) (len=1) "a",
-        	            	+ (string) (len=1) "b",
-        	            	+ (string) (len=1) "c",
-        	            	  (string) (len=1) "c"
-        	Test:       	TestRemove
-FAIL
-exit status 1
-FAIL	_/sandbox	0.007s
+PASS
+ok  	_/sandbox	0.007s

@@ -26,6 +26,6 @@ func remove(items []string, index int) ([]string, error) {
     } else if index == size - 1 {
         return items[:size - 1], nil
     }
-    
-    return append(items[index - 1:], items[index + 1:]...), nil
+       
+    return append(items[:index], items[index + 1:]...), nil
 }

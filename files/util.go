@@ -15,5 +15,9 @@ func index(items []string, element string) (int, error) {
 }
 
 func remove(items []string, index int) ([]string, error) {
+    if index >= len(items) {
+        return nil, fmt.Errorf("Index out of slice")
+    }
+    
     return []string{}, nil
 }

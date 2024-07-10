@@ -1,8 +1,2 @@
---- FAIL: TestRemove (0.00s)
-    util_test.go:19: 
-        	Error Trace:	util_test.go:19
-        	Error:      	An error is expected but got nil.
-        	Test:       	TestRemove
-FAIL
-exit status 1
-FAIL	_/sandbox	0.011s
+PASS
+ok  	_/sandbox	0.002s

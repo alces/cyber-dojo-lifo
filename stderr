@@ -1,2 +1,0 @@
-# _/sandbox [_/sandbox.test]
-./main.go:23:19: assignment mismatch: 1 variable but remove returns 2 values

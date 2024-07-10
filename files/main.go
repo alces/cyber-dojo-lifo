@@ -20,7 +20,7 @@ func (s *Stack) Add(element string) error {
     
     index, err := index(s.items, element)    
     if err == nil {
-        s.items = remove(s.items, index)
+        s.items, err = remove(s.items, index)
     } else { 
         s.size++
     }

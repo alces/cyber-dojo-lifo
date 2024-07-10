@@ -5,14 +5,11 @@ import (
     "github.com/stretchr/testify/assert"
 )
 
-func TestStackIndex(t *testing.T) {
-    nonexistent := "nonexistent"
-    existing    := "existing"
-    
-    stack := New()
-    assert.Equal(t, -1, stack.index(nonexistent))
+func TestIndex(t *testing.T) {    
+    _, err := index([]string{}, "nonexistent")
+    assert.Error(t, err)
         
-    stack.Add(existing)
-    assert.Equal(t, 0, stack.index(existing))
-    assert.Equal(t, -1, stack.index(nonexistent))
+    index, err := index([]string{"something", "existing"}, "existing")
+    assert.Nil(t, err)
+    assert.Equal(t, 1, index)
 }

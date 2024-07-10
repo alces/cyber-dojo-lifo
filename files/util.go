@@ -19,5 +19,9 @@ func remove(items []string, index int) ([]string, error) {
         return nil, fmt.Errorf("Index out of slice")
     }
     
+    if index == 0 {
+        return items[1:], nil
+    }
+    
     return []string{}, nil
 }

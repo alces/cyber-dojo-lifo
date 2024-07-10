@@ -13,3 +13,8 @@ func TestIndex(t *testing.T) {
     assert.Nil(t, err)
     assert.Equal(t, 1, index)
 }
+
+func TestRemove(t *testing.T) {
+    _, err := remove([]string{"a", "b"}, 2)
+    assert.Error(t, err)
+}

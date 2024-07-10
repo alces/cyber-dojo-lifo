@@ -13,3 +13,7 @@ func index(items []string, element string) (int, error) {
     
     return 0, fmt.Errorf("Not found")
 }
+
+func remove(items []string, index int) ([]string, error) {
+    return []string{}, nil
+}

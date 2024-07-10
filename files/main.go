@@ -34,7 +34,7 @@ func (s *Stack) Add(element string) error {
 }
 
 func (s *Stack) Get(index int) (string, error) {
-    item, ok := s.byPosition[index]    
+    item, ok := s.byPosition[s.Size() - index - 1]    
     if !ok {
         return "", fmt.Errorf("Not found")
     }

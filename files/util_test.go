@@ -17,4 +17,8 @@ func TestIndex(t *testing.T) {
 func TestRemove(t *testing.T) {
     _, err := remove([]string{"a", "b"}, 2)
     assert.Error(t, err)
+    
+    result, err := remove([]string{"a", "b"}, 0)
+    assert.Nil(t, err)
+    assert.Equal(t, []string{"b"}, result)
 }

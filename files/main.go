@@ -23,7 +23,7 @@ func (s *Stack) Add(element string) error {
         s.items, err = remove(s.items, index)
     }
     
-    if s.Size() == s.limit {
+    if s.limit > 0 && s.Size() == s.limit {
         s.items = s.items[1:]
     }
     

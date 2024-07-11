@@ -41,5 +41,7 @@ func (s *Stack) Size() int {
 }
 
 func (s *Stack) WithLimit(limit int) *Stack {
+    s.limit = limit
+    
     return s
 }

@@ -1,10 +1,2 @@
---- FAIL: TestStackWithLimit (0.00s)
-    main_test.go:64: 
-        	Error Trace:	main_test.go:64
-        	Error:      	Not equal: 
-        	            	expected: 5
-        	            	actual  : 0
-        	Test:       	TestStackWithLimit
-FAIL
-exit status 1
-FAIL	_/sandbox	0.002s
+PASS
+ok  	_/sandbox	0.003s

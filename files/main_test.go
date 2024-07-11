@@ -27,9 +27,13 @@ func TestStackAddOverLimit(t *testing.T) {
     stack.Add("first")
     stack.Add("second")
     stack.Add("third")
+    
+    assert.Equal(t, "first", stack.Get(2))
+    
     stack.Add("forth")
     
     assert.Equal(t, 3, stack.Size())
+    assert.Equal(t, "second", stack.Get(2))
 }    
 
 func TestStackGet(t *testing.T) {

@@ -5,6 +5,7 @@ import (
 )
 
 type Stack struct {
+    limit int
     items []string
 }
 
@@ -37,4 +38,8 @@ func (s *Stack) Get(index int) (string, error) {
 
 func (s *Stack) Size() int {
     return len(s.items)
+}
+
+func (s *Stack) WithLimit(limit int) *Stack {
+    return s
 }

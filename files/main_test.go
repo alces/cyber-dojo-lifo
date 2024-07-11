@@ -57,3 +57,9 @@ func TestStackSize(t *testing.T) {
     stack.Add("test")
     assert.Equal(t, 1, stack.Size())
 }
+
+func TestStackWithLimit(t *testing.T) {
+    stack := New().WithLimit(5)
+    
+    assert.Equal(t, 5, stack.limit)
+}    
